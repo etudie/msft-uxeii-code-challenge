@@ -1,6 +1,8 @@
 .Search-container {
     display: flex;
     flex-direction: row;
+    align-items: center;
+    justify-content: center;
     padding-top: 38px;
     padding-bottom: 49px;
 }
