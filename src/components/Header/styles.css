@@ -7,6 +7,8 @@
 .Header-logo {
     width: 60px;
     height: 60px;
+    box-shadow: 0px 5px 10px 0px #00000040;
+    border-radius: 8px;
 }
 
 .Header-title {
