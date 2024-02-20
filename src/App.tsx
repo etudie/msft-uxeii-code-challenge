@@ -1,25 +1,23 @@
+import { useState } from 'react';
 import './App.css';
 import Dog from './components/Dog';
 import Header from './components/Header';
 import Search from './components/Search';
+import Collection from './components/Collection';
 
 
 function App() {
+  const [searchTerm, setSearchTerm] = useState("");
+
   return (
     <div className="App">
       <header className="App-header">
         <Header/>
-        <Search/>
+        <Search setSearchTerm={setSearchTerm} />
       </header>
       <body>
         <div className="App-collection-container">
-        <Dog image="https://images.dog.ceo/breeds/terrier-tibetan/n02097474_2913.jpg" title="Appenzeller"/>
-        <Dog image="https://images.dog.ceo/breeds/terrier-tibetan/n02097474_2913.jpg" title="Appenzeller"/>
-        <Dog image="https://images.dog.ceo/breeds/terrier-tibetan/n02097474_2913.jpg" title="Appenzeller"/>
-        <Dog image="https://images.dog.ceo/breeds/terrier-tibetan/n02097474_2913.jpg" title="Appenzeller"/>
-        <Dog image="https://images.dog.ceo/breeds/terrier-tibetan/n02097474_2913.jpg" title="Appenzeller"/>
-        <Dog image="https://images.dog.ceo/breeds/terrier-tibetan/n02097474_2913.jpg" title="Appenzeller"/>
-        <Dog image="https://images.dog.ceo/breeds/terrier-tibetan/n02097474_2913.jpg" title="Appenzeller"/>
+          <Collection  searchTerm={searchTerm} />
         </div>
       </body>
     </div>

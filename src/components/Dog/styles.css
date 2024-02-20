@@ -15,9 +15,20 @@
     border-radius: 20px;
     box-shadow: 0px 0px 2px 0px #0000001F;
     box-shadow: 0px 8px 16px 0px #00000024;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
 }
 
 .Dog-title {
     padding: 0 0 0 15px;
     text-align: left;
+    font-family: Helvetica Neue;
+    font-size: 24px;
+    font-weight: 500;
+    line-height: 29px;
+    letter-spacing: 0em;
+    text-align: left;
+    text-transform: capitalize;
+
 }
