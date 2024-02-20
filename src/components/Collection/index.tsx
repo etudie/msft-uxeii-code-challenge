@@ -3,7 +3,7 @@ import { fetchAPI } from '../../utils/utils';
 import './styles.css';
 import Dog from '../Dog';
 
-const Collection = ({searchTerm}) => {
+const Collection = ({searchTerm}:{searchTerm:string}) => {
 
     const [breeds, setBreeds] = useState<DogBreeds>({});
     const [filteredBreeds, setFilteredBreeds] = useState<DogBreeds>({});
@@ -24,7 +24,19 @@ const Collection = ({searchTerm}) => {
           if(key.includes(searchTerm)){
             result[key] = breeds[key];
           }
+        } else {
+          const subbreeds = [];
+          // Loop over subbreed
+          breeds[key].forEach((subbreed)=>{
+            if((subbreed+" "+key).includes(searchTerm)){
+              subbreeds.push(subbreed);
+            }
+          })
+          if(subbreeds.length > 0){
+            result[key] = subbreeds;
+          }
         }
+
     }
 
     setFilteredBreeds(result);
