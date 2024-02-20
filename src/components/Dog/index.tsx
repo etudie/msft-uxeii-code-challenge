@@ -2,7 +2,7 @@ import { useEffect, useState } from 'react';
 import './styles.css';
 import { fetchAPI } from '../../utils/utils';
 
-const Dog = ({breed, sub}:{breed:string, sub?:string}) => {
+const Dog = ({breed, ifShow, sub}:{breed:string, ifShow: boolean, sub?:string}) => {
 
     const [image, setImage] = useState("")
     useEffect(()=>{
@@ -19,7 +19,7 @@ const Dog = ({breed, sub}:{breed:string, sub?:string}) => {
     }, []);
 
     return (
-        <div className="Dog-container">
+        <div className="Dog-container" style={{display: ifShow? "block" : "none"}}>
             <div className="Dog-image" style={{backgroundImage: `url(${image})`}}></div>
             <h2 className="Dog-title">{`${sub||""} ${breed}`}</h2>
         </div>

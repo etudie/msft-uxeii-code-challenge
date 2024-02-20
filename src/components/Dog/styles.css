@@ -5,10 +5,6 @@
     padding-right: 30px;
 }
 
-.Dog-container:nth-child(3n){
-    padding-right: 0;
-}
-
 .Dog-image{
     width: 400px;
     height: 250px;
