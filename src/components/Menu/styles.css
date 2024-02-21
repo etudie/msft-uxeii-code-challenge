@@ -1,0 +1,12 @@
+.Menu-container {
+    display: flex;
+    justify-content: center;
+    padding-bottom: 49px;
+}
+
+.Menu-select {
+    padding: 12px 24px;
+    border-radius: 10px;
+    font-family: 'Helvetica Neue';
+    border: 1px solid #B1B1B9;
+}

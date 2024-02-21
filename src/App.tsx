@@ -4,6 +4,7 @@ import Dog from './components/Dog';
 import Header from './components/Header';
 import Search from './components/Search';
 import Collection from './components/Collection';
+import Menu from './components/Menu';
 
 
 function App() {
@@ -14,6 +15,7 @@ function App() {
       <header className="App-header">
         <Header/>
         <Search setSearchTerm={setSearchTerm} />
+        <Menu setSearchTerm={setSearchTerm}/>
       </header>
       <body>
         <div className="App-collection-container">
