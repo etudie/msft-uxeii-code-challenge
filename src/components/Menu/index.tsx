@@ -14,7 +14,7 @@ const Menu = ({setSearchTerm}) => {
     return (
         <div className="Menu-container">
             <select name="breeds" className="Menu-select" onChange={(e) => setSearchTerm(e.target.value)}>
-            <option value="">Pick a breed to see subbreeds</option>
+            <option value="">Explore Subbreeds!</option>
                 {breeds.map((breed)=>{return <option value={breed} key={breed}>{breed}</option>})}
             </select>
         </div>
