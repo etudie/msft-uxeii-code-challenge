@@ -8,7 +8,7 @@ const Menu = ({setBreed}) => {
         fetchAPI(`https://dog.ceo/api/breeds/list/all`).then((response)=>{
                 setBreedList(response.message);
                 });
-    })
+    }, [])
 
     const breeds = Object.keys(breedList);
     return (
