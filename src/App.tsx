@@ -9,17 +9,18 @@ import Menu from './components/Menu';
 
 function App() {
   const [searchTerm, setSearchTerm] = useState("");
+  const [breed, setBreed] = useState("");
 
   return (
     <div className="App">
       <header className="App-header">
         <Header/>
         <Search setSearchTerm={setSearchTerm} />
-        <Menu setSearchTerm={setSearchTerm}/>
+        <Menu setBreed={setBreed}/>
       </header>
       <body>
         <div className="App-collection-container">
-          <Collection  searchTerm={searchTerm} />
+          <Collection  searchTerm={searchTerm} breed={breed}/>
         </div>
       </body>
     </div>
