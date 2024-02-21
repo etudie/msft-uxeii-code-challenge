@@ -36,3 +36,9 @@
 .Search-button:active {
     background: #2c4542;
 }
+
+@media (max-width: 600px) {
+    .Search-input {
+        width: auto;
+    }
+  }

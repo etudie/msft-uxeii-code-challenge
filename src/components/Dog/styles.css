@@ -16,6 +16,10 @@
     background-position: center;
 }
 
+.Dog-image:hover {
+    opacity: 0.8;
+}
+
 .Dog-title {
     padding: 0 0 0 15px;
     text-align: left;
@@ -28,3 +32,14 @@
     text-transform: capitalize;
 
 }
+
+@media (max-width: 600px) {
+    .Dog-container {
+        width: auto;
+        height: auto;
+        padding-right: 0;
+    }
+    .Dog-image{
+        width: auto;
+    }
+  }

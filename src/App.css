@@ -12,3 +12,10 @@ html {
   flex-wrap: wrap;
   width: 1290px;
 }
+
+@media (max-width: 600px) {
+  .App-collection-container {
+    flex-direction: column;
+    width: 100%;
+  }
+}
